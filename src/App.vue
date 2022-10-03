@@ -44,5 +44,5 @@
   
 
 <style src="@/assets/css/styles.css">
-
+  
 </style>
