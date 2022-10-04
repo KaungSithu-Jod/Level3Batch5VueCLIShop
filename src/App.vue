@@ -7,18 +7,28 @@
           class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-          <li class="nav-item"><router-link class="nav-link active" aria-current="page" to="/">Home</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/about">About</router-link></li>
+          <li class="nav-item">
+            <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/about">About</router-link>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" to="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Shop</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><router-link class="dropdown-item" to="/shop">All Products</router-link></li>
+              <li>
+                <router-link class="dropdown-item" to="/shop">All Products</router-link>
+              </li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              <li><router-link class="dropdown-item" to="/shop">Popular Items</router-link></li>
-              <li><router-link class="dropdown-item" to="/shop">New Arrivals</router-link></li>
+              <li>
+                <router-link class="dropdown-item" to="/shop">Popular Items</router-link>
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/shop">New Arrivals</router-link>
+              </li>
             </ul>
           </li>
         </ul>
@@ -42,7 +52,10 @@
   </footer>
 </template>
   
+<script>
+
+</script>
 
 <style src="@/assets/css/styles.css">
-  
+
 </style>

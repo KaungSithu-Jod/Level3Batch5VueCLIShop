@@ -11,7 +11,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" @click="reloadPage()">All Products</a></li>
-                    <li v-for="(cat,index) in Categories" :key="index">
+                    <li v-for="(zcat,index) in Categories" :key="index">
                         <a class="dropdown-item text-capitalize" @click="ItemsInCat(cat)">
                             {{cat}}
                         </a>

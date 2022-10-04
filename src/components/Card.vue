@@ -13,17 +13,18 @@
         </div>
         <!-- Product actions-->
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View
-                    options</a></div>
+            <button class="btn btn-outline-dark mt-auto mx-2"  >Add to Cart</button>
+            <router-link class="btn btn-outline-dark mt-auto" :to="{ name: 'DetailView', params: {id:product.id}}">Detail</router-link>
         </div>
     </div>
 </template>
 
 <script>
+    
     export default {
         name: 'ProductCard',
         props: {
             product: Object,
-        }
-    }
+        },
+    };
 </script>
