@@ -4,7 +4,8 @@
     <!-- Dropdown -->
     <section class="py-5">
         <div class="container ms-5">
-            <div class="dropdown">
+            {{this.$store.getters.getAdult}}
+            <div class="dropdown" >
                 <a class="btn btn-light btn-outline-dark dropdown-toggle" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Categories

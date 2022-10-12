@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
+            <router-link class="nav-link active" aria-current="page" to="/">{{this.$store.state.name}}</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">About</router-link>
@@ -36,7 +36,7 @@
           <button class="btn btn-outline-dark" type="submit">
             <i class="bi-cart-fill me-1"></i>
             Cart
-            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            <span class="badge bg-dark text-white ms-1 rounded-pill"  v-if="this.$store.state.cart.length > 0">{{cartNoti}}</span>
           </button>
         </form>
       </div>
@@ -53,7 +53,23 @@
 </template>
   
 <script>
-
+export default {
+  data() {
+    return {
+      cartArr: this.$store.state.cart,
+    }
+  },
+  mounted() {
+    // this.$store.dispatch('getData')
+  },
+  methods: {
+  },
+  computed: {
+    cartNoti() {
+      return this.cartArr.reduce((a, row) => a + row.qty, 0)
+    }
+  }
+}
 </script>
 
 <style src="@/assets/css/styles.css">
